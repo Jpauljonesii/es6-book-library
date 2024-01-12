@@ -1,10 +1,10 @@
 'use strict';
-function getBookData(){
+import renderBooks from './bookUI.js';
+function getBookData() {
   $.get(
     'https://www.googleapis.com/books/v1/volumes?q=javascript.',
-    function (data) {
-      console.log(data);
-    });
+    renderBooks
+  );
 }
 
 export default getBookData;
