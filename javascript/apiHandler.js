@@ -1,4 +1,3 @@
-'use strict';
 import renderBooks from './bookUI.js';
 function getBookData() {
   $.get(
